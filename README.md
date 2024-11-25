@@ -6,7 +6,7 @@ The SimHash signature consists in the concatenation of m single-bit signatures.
 The SimHash signature can be used to estimate the cosine similarity of two documents.
 
 **Computing SimHash (Option 1)**
-- Pick a random vector $r_w = \{+1, -1\}^{|d|}$ made of +1,-1 drawn uniformly at random (as many as the length |d| of document vectors)
+- Pick a random vector $r_w = (+1, -1)^{|d|}$ made of +1,-1 drawn uniformly at random (as many as the length |d| of document vectors)
 - Given a document A, compute the dot product (r x A) (○ same as checking on which side of the hyperplane A is)
 - If this is positive then the single bit signature is 1 otherwise it is 0
 - Repeat m times to compute a SimHash signature of m bits.
