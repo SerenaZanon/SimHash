@@ -12,7 +12,7 @@ The SimHash signature can be used to estimate the cosine similarity of two docum
 - Repeat m times to compute a SimHash signature of m bits.
 
 **Computing SimHash (Option 2)**
-- For each word w pick a random vector $r_w = \{+1, -1\}^m$ of length m made of +1,-1
+- For each word w pick a random vector $r_w = (+1, -1)^m$ of length m made of +1,-1
 - Initialize the signature to 0^m
 - For each word w in document A, add to the signature the corresponding vector to rw multiplied by the weight of w (weight can be 1, or tf-idf, etc…)
 - The sign of the final signature is the SimHash of the document
